@@ -6,11 +6,13 @@ public class Animais {
         Animal[] animals = new Animal[30];
         int animalCont = 0;
 
-        animals[0] = new Animal("oi","azul","algo",5,1,4);
-
         Zoo zoo = new Zoo();
 
-        zoo.getSpecie();
+        while (animalCont<30){
+            animals[animalCont] = zoo.getAnimal();
+            animalCont++;
+        }
+
     }
 
 }
